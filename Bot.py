@@ -2,7 +2,7 @@ import telebot
 import re
 import os
 
-TOKEN = os.getenv("8033969537:AAF_TeB3pFGNjc7zTYolaNq-eZSQP0jF6T4")  # Render ke Environment Variable se Token lega
+TOKEN = os.getenv("8033969537:AAF_TeB3pFGNjc7zTYolaNq-eZSQP0jF6T4")  # Koyeb env variable से लेगा
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(content_types=['document'])
@@ -31,7 +31,6 @@ def handle_file(message):
         if output_lines:
             output_text = "\n".join(output_lines)
 
-            # Save to txt
             with open("output.txt", "w", encoding="utf-8") as f:
                 f.write(output_text)
 
