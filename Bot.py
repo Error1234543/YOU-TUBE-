@@ -2,7 +2,7 @@ import telebot
 import re
 import os
 
-TOKEN = os.getenv("BOT_TOKEN")  # Render ke Environment Variable se Token lega
+TOKEN = os.getenv("8033969537:AAF_TeB3pFGNjc7zTYolaNq-eZSQP0jF6T4")  # Render ke Environment Variable se Token lega
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(content_types=['document'])
